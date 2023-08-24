@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "colors": "file:colors-1.4.0.tgz"
+  }
+}

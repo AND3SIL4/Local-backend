@@ -1,0 +1,53 @@
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.padre{
+    height: 1000px;
+    width: 1000px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijo{
+    height: 500px;
+    width: 500px;
+    background-color: green; 
+}
+.heart{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart::before,
+.heart::after{
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+.heart::before{
+    top: -30px;
+}
+
+.heart::after{
+    left: 30px;
+}
+
+@keyframes pulse{
+    75%{
+        transform: 
+        rotate(-45deg)
+        scale(1.1);
+    }
+}
